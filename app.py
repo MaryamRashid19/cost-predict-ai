@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 # 
 # # Load data
-insurance_dataset = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/insurance_dataset.csv')
+insurance_dataset = pd.read_csv('insurance_dataset.csv')
 # 
 # # Data processing
 insurance_processed = insurance_dataset.copy()
