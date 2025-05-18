@@ -3,10 +3,7 @@
 # %%writefile app.py
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.ensemble import RandomForestRegressor
-import shap
 # 
 # # Load data
 insurance_dataset = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/insurance_dataset.csv')
