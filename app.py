@@ -57,16 +57,4 @@ if submitted:
     st.success(f"✅ Estimated Annual Premium: **${prediction:,.2f}**")
 
 
-# Run Streamlit in background
-# !nohup streamlit run app.py --server.port 8501 &>/dev/null&
-
-# Set up ngrok with proper configuration
-from pyngrok import ngrok, conf
-
-# Get your auth token from https://dashboard.ngrok.com/get-started/your-authtoken
-conf.get_default().auth_token = "2xDrqAZ1xPqSTIURTTUAnAB6qPW_6W1r4PJrayr13G7uyb2jP"  # 👈 Replace this!
-
-# Create tunnel with explicit HTTP configuration
-public_url = ngrok.connect(addr='8501', proto='http')  # Explicit HTTP protocol
-print("Your app is live at:", public_url)
 
